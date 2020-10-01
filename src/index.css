@@ -12,6 +12,16 @@ code {
     monospace;
 }
 
+.over-text {
+  top: 0px;
+  left: 0px;
+  right: 0px; 
+  bottom: 0px;
+  justify-content: 'center';
+  align-items: 'center';
+  position: absolute;
+}
+
 .g-card {
   margin: 20px;
 }
@@ -36,4 +46,50 @@ code {
 .g-card-sub-title {
   font-size: 16px;
   margin: 0px;
+}
+
+#HomeHeader .view {
+  background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/850d5888-f262-47d0-bb7b-34d03cd8d3ee/dbk7ro6-e704fd42-1159-4a30-9231-324475986be8.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvODUwZDU4ODgtZjI2Mi00N2QwLWJiN2ItMzRkMDNjZDhkM2VlXC9kYms3cm82LWU3MDRmZDQyLTExNTktNGEzMC05MjMxLTMyNDQ3NTk4NmJlOC5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.UM2SXnkIdJ15wjAv8FAlezdFpxcbU6tVZlLdcKQ_kL4");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  min-height: 100vh;
+}
+
+#HomeHeader .row {
+  margin-top: 20vh;
+}
+
+#HomeHeader h6 {
+  line-height: 1.7;
+}
+
+@media only screen and (max-width: 400px) {
+  #HomeHeader .animated img {
+    max-height: 50vh;
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #HomeHeader .animated img {
+    max-height: 35vh;
+    transform: translateX(-50%);
+    left: 50%;
+  }
+}
+
+@media (max-width: 767px) and (orientation: landscape) {
+  #HomeHeader .animated img {
+    max-height: 50vh;
+    transform: translateX(-50%);
+    left: 50%;
+    position: relative;
+  }
+}
+@media (max-width: 1000px) and (orientation: landscape) {
+  #HomeHeader .view {
+    min-height: 150vh;
+  }
 }
